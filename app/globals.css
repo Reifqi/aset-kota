@@ -1,0 +1,142 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.aset-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.aset-item {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 300px;
+}
+
+.aset-item h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.aset-item h6 {
+  color: #7f7f7f;
+}
+
+.aset-item p {
+  color: rgba(0, 0, 0, 0.727);
+}
+
+.aset-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.aset-item:hover {
+  background-color: #ddd;
+}
+
+
+.aset-detail {
+  display: flex;
+  margin: 3rem;
+}
+
+.aset-detail__image img {
+  margin-top: 6px;
+  margin-left: 1rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.aset-detail__content {
+  margin-left: 3rem;
+}
+
+.aset-detail__content h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: hsl(0, 0%, 50%);
+}
+
+.aset-detail__content p {
+  max-width: 600px;
+}
+
+.aset-list__parent {
+  border: 5px solid black;
+}
+
+.aset-list__parent h1 {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.aset-content__description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-height: 5rem;
+  transition: max-height 0.3s ease;
+
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .aset-detail {
+    flex-direction: column;
+  }
+
+  .logoBNA{
+    width: auto;
+  }
+
+  .aset-detail__image {
+    text-align: center;
+  }
+
+  .aset-detail__content {
+    margin-left: 1rem;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .asetTengahImage {
+    /* display: none; */
+    width: 100%;
+  }
+
+  .aset-detail__image img {
+    margin-top: 6px;
+    margin-left: 1rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    max-width: 100%;
+  }
+}
+
+.nav-style {
+  justify-content: space-between;
+}
+
+/* .admin-button{
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+} */
+
+.aset-item-admin {
+  justify-content: space-between;
+}

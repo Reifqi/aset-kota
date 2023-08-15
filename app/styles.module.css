@@ -1,0 +1,36 @@
+/* Default styles */
+.header {
+    display: flex;
+    border: 5px solid black;
+}
+
+.contentLeft {
+    padding: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.contentLeft p {
+    text-align: justify;
+    margin-top: 2rem;
+}
+
+.aset-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .contentLeft {
+        padding: 1rem;
+    }
+}
+    
